@@ -12,5 +12,7 @@ def retrieve_relevant_chunks(question: str, top_k: int = 5) -> list[str]:
     return chunks
 
 if __name__ == "__main__":
-    result = retrieve_relevant_chunks("Расскажи про кодинг", top_k=1)
-    print(result)
+    result = retrieve_relevant_chunks("горутина структура g стек планировщик", top_k=5)
+    for r in result:
+        print(r[:150])
+        print("---")

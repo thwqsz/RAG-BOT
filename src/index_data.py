@@ -30,7 +30,7 @@ def index_all_files():
         filepath = os.path.join(DATA_DIR, filename)
         text = read_file(filepath)
 
-        chunks = chunk_text(text, chunk_size=300, overlap=50)
+        chunks = chunk_text(text, chunk_size=150, overlap=30)
         print(f"{filename}: получилось {len(chunks)} чанков")
         all_chunks.extend(chunks)
 

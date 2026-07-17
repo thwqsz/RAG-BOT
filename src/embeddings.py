@@ -2,7 +2,7 @@ from sentence_transformers import SentenceTransformer
 
 # Загружаем модель один раз при импорте файла, а не при каждом вызове функции —
 # иначе каждый раз будет заново грузиться с диска
-model = SentenceTransformer('all-MiniLM-L6-v2')
+model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
 
 
 def get_embedding(text: str) -> list[float]:

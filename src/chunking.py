@@ -1,4 +1,4 @@
-def chunk_text(text: str, chunk_size: int = 500, overlap: int = 50) -> list[str]:
+def chunk_text(text: str, chunk_size: int = 150, overlap: int = 30) -> list[str]:
     """
     Разбивает текст на куски (чанки) фиксированного размера в словах,
     с перехлёстом между соседними чанками.

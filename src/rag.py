@@ -2,7 +2,7 @@ import ollama
 from retrieval import retrieve_relevant_chunks
 
 
-def answer_question(question: str, top_k: int = 3) -> str:
+def answer_question(question: str, top_k: int = 5) -> str:
     """
     Полный цикл: находит релевантные чанки, собирает промпт,
     отправляет в LLM, возвращает ответ.
